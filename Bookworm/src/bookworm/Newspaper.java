@@ -1,6 +1,8 @@
 package bookworm;
 
-
+/**
+ * Represents a newspaper.
+ */
 public class Newspaper extends Media {
     
     private String publisher;
@@ -9,36 +11,67 @@ public class Newspaper extends Media {
     
     private String edition;
     
+    /**
+     * Creates a new Newspaper.
+     */  
     public Newspaper() {
+        super("", 0, true);
         publisher = "";
         publicationDate = "";
         edition = "";
     }
     
+    /**
+     * Gets the publisher.
+     * @return the publisher
+     */
     public String getPublisher() {
         return publisher;
     }
-    
+
+    /**
+     * Gets the publication date.
+     * @return the publication date
+     */
     public String getPublicationDate() {
         return publicationDate;
     }
-    
+
+    /**
+     * Gets the edition.
+     * @return the edition
+     */
     public String getEdition() {
         return edition;
     }
     
+    /**
+     * Sets the publisher.
+     * @param publisher the publisher
+     */
     public void setPublisher() {
         this.publisher = publisher;
     }
-    
+
+     /**
+     * Sets the publication date.
+     * @param publicationDate the publication date
+     */
     public void setPublicationDate() {
         this.publicationdate = publication;
     }
-    
+
+    /**
+     * Sets the edition.
+     * @param edition the edition
+     */
     public void setEdition() {
         this.edition = edition;
     }
-    
+
+     /**
+     * Prints the newspaper information.
+     */
     @Override
     public void print() {
         System.out.println("Publisher: " + publisher);
